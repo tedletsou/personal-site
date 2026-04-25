@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ted Letsou | About</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <meta name="description"
+    content="Background and recent news for Ted Letsou, a postdoctoral fellow working in optics and photonics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@600;700&family=Manrope:wght@700;800&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=20260424e" />
+</head>
+
+<body class="content-page-body">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./index.html">Ted Letsou</a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <span class="site-nav__static">About</span>
+          <a href="./research.html">Research</a>
+          <a href="./publications.html">Publications</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content-page">
+      <section class="content-page__header content-page__header--compact">
+        <h1 class="page-title js-font-scramble">
+          <span class="page-title__line">About</span>
+        </h1>
+      </section>
+
+      <section class="about-intro">
+        <div class="about-intro__copy">
+          <p class="content-page__lead content-page__lead--wide">
+            During most of my Ph.D., I worked on quantum cascade lasers (QCLs)
+            under the guidance of Prof.
+            <a href="https://capasso.seas.harvard.edu/" target="_blank" rel="noreferrer">Federico Capasso</a>,
+            focusing on mode-locking them. QCLs are among the brightest sources in the mid-infrared, where many
+            molecules have their strongest absorption lines, making them especially attractive for sensing. As a
+            postdoctoral fellow, I am also working with Prof.
+            <a href="https://sites.google.com/g.harvard.edu/y-lab" target="_blank" rel="noreferrer">Kiyoul Yang</a>
+            on rare-earth-doped gain systems for integrated photonics.
+          </p>
+          <p class="content-page__lead content-page__lead--wide">
+            My professional interests span fundamental photonics research and the development of technologies that can
+            make an impact beyond the lab. I am especially interested in turning new ideas into practical systems for
+            sensing, communications, and other real-world applications.
+          </p>
+          <p class="content-page__lead content-page__lead--wide">
+            During graduate school, I was lucky enough to be awarded both the Department of Defense NDSEG Fellowship and
+            the NSF Graduate Research Fellowship.
+          </p>
+        </div>
+
+        <div class="about-intro__visual">
+          <img class="about-intro__image" src="./assets/pic.png" alt="Headshot of Ted Letsou" />
+        </div>
+      </section>
+
+      <section class="content-page__header content-page__header--compact news-carousel__header">
+        <p class="content-page__eyebrow">Recent News</p>
+        <div class="news-carousel__controls" aria-label="News navigation">
+          <button class="news-carousel__button js-news-carousel-prev" type="button" aria-label="Previous news item">
+            &#8592;
+          </button>
+          <button class="news-carousel__button js-news-carousel-next" type="button" aria-label="Next news item">
+            &#8594;
+          </button>
+        </div>
+      </section>
+
+      <section class="news-carousel" aria-label="Recent news">
+        <div class="news-carousel__viewport">
+          <div class="news-carousel__track js-news-carousel-track">
+            <article class="news-strip news-strip--page news-carousel__item">
+              <p class="news-strip__label">November 17, 2025</p>
+              <p class="news-strip__text">
+                I defended my Ph.D. thesis. Special thanks to my committee: Federico Capasso, James
+                Fujimoto, and Jelena Notaros.
+              </p>
+            </article>
+
+            <article
+              class="news-strip news-strip--page news-carousel__item news-card news-card--interactive js-news-card">
+              <button class="news-card__surface js-news-surface" type="button" aria-expanded="false">
+                <p class="news-strip__label">July 9, 2025</p>
+                <p class="news-strip__text">
+                  Our work on continuously tunable semiconductor lasers was featured on the cover of
+                  <em>Optica</em>.
+                </p>
+              </button>
+              <div class="news-card__details js-news-details" hidden>
+                <img class="news-card__cover" src="./assets/cover.png"
+                  alt="Optica cover featuring continuously tunable semiconductor lasers" loading="lazy" />
+              </div>
+              <div class="news-card__footer">
+                <a class="news-strip__link news-card__link" href="https://seas.harvard.edu/news/tunable-laser-light"
+                  target="_blank" rel="noreferrer">
+                  Read the Harvard press release
+                </a>
+                <button class="news-card__toggle js-news-toggle" type="button"
+                  aria-expanded="false">
+                  +
+                </button>
+              </div>
+            </article>
+
+            <article class="news-strip news-strip--page news-carousel__item">
+              <p class="news-strip__label">April 16, 2025</p>
+              <p class="news-strip__text">
+                Our new <em>Nature</em> paper demonstrated on-chip pulse generation from a quantum
+                cascade laser.
+              </p>
+              <a class="news-strip__link" href="https://seas.harvard.edu/news/compact-mid-infrared-pulse-generator"
+                target="_blank" rel="noreferrer">
+                Read the Harvard feature
+              </a>
+            </article>
+
+            <article class="news-strip news-strip--page news-carousel__item">
+              <p class="news-strip__label">January 31, 2025</p>
+              <p class="news-strip__text">
+                Our recent work on coupled semiconductor ring lasers was highlighted alongside the
+                editor&apos;s choice paper.
+              </p>
+              <a class="news-strip__link"
+                href="https://phys.org/news/2025-01-coupled-semiconductor-lasers-generate-optical.html" target="_blank"
+                rel="noreferrer">
+                Read the article
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="mailto:ted@letsou.net">Contact me</a>
+      <p>2026</p>
+    </footer>
+  </div>
+
+    <script src="./script.js?v=20260424e"></script>
+</body>
+
+</html>

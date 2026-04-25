@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ted Letsou | Research</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <meta
+      name="description"
+      content="Research themes in active photonics, sensing systems, and ultrafast optics by Ted Letsou."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@600;700&family=Manrope:wght@700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260424e" />
+  </head>
+  <body class="content-page-body">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="./index.html">Ted Letsou</a>
+
+          <nav class="site-nav" aria-label="Primary">
+            <a href="./about.html">About</a>
+            <span class="site-nav__static">Research</span>
+            <a href="./publications.html">Publications</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="content-page content-page--feature">
+        <section class="content-page__header content-page__header--compact">
+          <h1 class="page-title js-font-scramble">
+            <span class="page-title__line">Research</span>
+          </h1>
+          <div class="research-header-grid">
+            <p class="content-page__lead content-page__lead--wide">
+              My research directions broadly fall into three categories: active photonics, sensing systems, and
+              ultrafast optics.
+            </p>
+            <div class="research-support-block">
+              <div class="research-support-row">
+                <p class="content-page__lead research-support">
+                  My recent work has been supported by the
+                  <span>NDSEG Fellowship Program</span>,
+                  <span>DRS Daylight Solutions</span>, and the
+                  <span>National Science Foundation under Grant No. ECCS-2221715</span>.
+                </p>
+                <img class="research-support-logo" src="./assets/1.png" alt="Research support logo" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-grid feature-grid--overlay" aria-label="Research themes">
+          <article class="publication-card feature-card js-feature-card">
+            <button class="feature-card__surface js-feature-surface" type="button" aria-expanded="false">
+              <video
+                class="feature-card__image feature-card__video"
+                src="./assets/ted0001-0120.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Active photonics research video"
+              ></video>
+              <div class="feature-card__header">
+                <h2>Active photonics</h2>
+              </div>
+            </button>
+            <div class="feature-card__details js-feature-details" hidden>
+              <p class="feature-card__text">
+                Passive photonic circuits can only take you so far. At some point, every optical
+                system reaches the same limit: you wish you had more light, more control, or a way
+                to generate and shape the field directly on chip. My work in active photonics aims to
+                fill this gap.
+              </p>
+              <p class="feature-card__text">
+                Active photonics spans amplifiers and lasers across a range of material platforms, including
+                III-V semiconductors and rare-earth systems. I am particularly interested in
+                treating gain not as a standalone source coupled to a photonic chip, but as an integrated
+                building block within photonic circuits. In the case of mid-infrared QCLs, this approach has
+                enabled active resonators, tunable ring and racetrack lasers, and on-demand sources of pulsed
+                light. Similar concepts, translated to the near-infrared, could help address bottlenecks in
+                high-speed communications, including data-center and undersea links.
+              </p>
+              <p class="feature-card__papers-label">Relevant papers</p>
+              <div class="feature-card__links">
+                <a href="https://doi.org/10.1364/OPTICA.559884" target="_blank" rel="noreferrer">Continuously and widely tunable semiconductor ring lasers</a>
+                <a href="https://doi.org/10.1038/s41467-023-44628-7" target="_blank" rel="noreferrer">Active mid-infrared ring resonators</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-card feature-card js-feature-card">
+            <button class="feature-card__surface js-feature-surface" type="button" aria-expanded="false">
+              <img class="feature-card__image" src="./assets/research-sensing.png" alt="Sensing systems research image" />
+              <div class="feature-card__header">
+                <h2>Sensing systems</h2>
+              </div>
+            </button>
+            <div class="feature-card__details js-feature-details" hidden>
+              <p class="feature-card__text">
+                The mid-infrared, broadly defined here as 3-12 µm, is one of the richest regions in optics because
+                many molecules have strong, distinctive spectral fingerprints there. My work in sensing is driven
+                by the challenge of turning that spectral richness into compact, fast, and practical systems using
+                QCLs, either as single-mode tunable lasers for identifying narrow absorption features or as
+                dual-comb spectrometers that cover broad spectral ranges in microseconds.
+              </p>
+              <p class="feature-card__text">
+                Much work is still needed to realize these devices. Future work aims to combine the necessary
+                electronics and photonic components, including drivers, sources, detectors, and optical circuitry,
+                on a single chip.
+              </p>
+              <p class="feature-card__papers-label">Relevant papers</p>
+              <div class="feature-card__links">
+                <a href="https://doi.org/10.1364/OPTICA.582100" target="_blank" rel="noreferrer">High-power ring laser frequency-modulated combs</a>
+                <a href="https://doi.org/10.1063/5.0266983" target="_blank" rel="noreferrer">How clearly can an infrared detector see through a hot window?</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-card feature-card js-feature-card">
+            <button class="feature-card__surface js-feature-surface" type="button" aria-expanded="false">
+              <video
+                class="feature-card__image feature-card__video"
+                src="./assets/WhatsApp Video 2026-04-24 at 14.06.54.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Ultrafast optics research video"
+              ></video>
+              <div class="feature-card__header">
+                <h2>Ultrafast optics</h2>
+              </div>
+            </button>
+            <div class="feature-card__details js-feature-details" hidden>
+              <p class="feature-card__text">
+                Lasers are often thought of as sources that emit a single color of light, but that is not always
+                the case. Under the right conditions, a laser can emit many evenly spaced colors at once, and if
+                these colors remain phase-locked they form what is known as an optical frequency comb.
+                Frequency combs are useful for applications ranging from precision spectroscopy and chemical
+                sensing to metrology, timing, and optical communications.
+              </p>
+              <p class="feature-card__text">
+                A major theme of my work is understanding how these coherent multi-frequency states emerge in
+                III-V semiconductor lasers. Because these systems have ultrafast gain dynamics, they can
+                spontaneously form mode-locked and comb-like states, along with other structured nonlinear
+                dynamics such as solitons and soliton pairs. I am interested both in the physics of how these
+                states arise and in how they can be engineered in more complex laser geometries, including
+                coupled and actively driven resonators.
+              </p>
+              <p class="feature-card__papers-label">Relevant papers</p>
+              <div class="feature-card__links">
+                <a href="https://doi.org/10.1038/s41586-025-08853-y" target="_blank" rel="noreferrer">Driven bright solitons on a mid-infrared laser chip</a>
+                <a href="https://doi.org/10.1103/PhysRevLett.134.023802" target="_blank" rel="noreferrer">Hybridized Soliton Lasing in Coupled Semiconductor Lasers</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a href="mailto:ted@letsou.net">Contact me</a>
+        <p>2026</p>
+      </footer>
+    </div>
+
+    <script src="./script.js?v=20260424e"></script>
+  </body>
+</html>
