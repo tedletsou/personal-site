@@ -12,29 +12,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@600;700&family=Manrope:wght@700;800&family=Space+Grotesk:wght@600;700&display=swap"
-    rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=20260424e" />
+    <link rel="stylesheet" href="./styles.css?v=20261006b" />
 </head>
 
 <body class="content-page-body">
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="page-shell">
     <header class="site-header">
       <div class="site-header__inner">
         <a class="brand" href="./index.html">Ted Letsou</a>
 
         <nav class="site-nav" aria-label="Primary">
-          <span class="site-nav__static">About</span>
+          <a href="./about.html" aria-current="page">About</a>
           <a href="./research.html">Research</a>
           <a href="./publications.html">Publications</a>
         </nav>
       </div>
     </header>
 
-    <main class="content-page">
+    <main id="main" class="content-page">
       <section class="content-page__header content-page__header--compact">
-        <h1 class="page-title js-font-scramble">
+        <h1 class="page-title">
           <span class="page-title__line">About</span>
         </h1>
       </section>
@@ -42,14 +40,16 @@
       <section class="about-intro">
         <div class="about-intro__copy">
           <p class="content-page__lead content-page__lead--wide">
-            During most of my Ph.D., I worked on quantum cascade lasers (QCLs)
-            under the guidance of Prof.
+            During my Ph.D. with Prof.
             <a href="https://capasso.seas.harvard.edu/" target="_blank" rel="noreferrer">Federico Capasso</a>,
-            focusing on mode-locking them. QCLs are among the brightest sources in the mid-infrared, where many
-            molecules have their strongest absorption lines, making them especially attractive for sensing. As a
-            postdoctoral fellow, I am also working with Prof.
-            <a href="https://sites.google.com/g.harvard.edu/y-lab" target="_blank" rel="noreferrer">Kiyoul Yang</a>
-            on rare-earth-doped gain systems for integrated photonics.
+            I worked on active photonics platforms that bring semiconductor lasers and passive integrated
+            photonics together on a chip. By combining optical gain with passive circuitry, we can generate,
+            route, and shape light within the same platform. Our lasers of choice are mid-infrared quantum
+            cascade lasers (QCLs), which operate where many molecules have strong absorption fingerprints,
+            making these chips attractive for sensing applications. As a postdoctoral fellow, I am extending
+            this approach to other gain systems, including rare-earth-doped integrated photonics, in
+            collaboration with Prof.
+            <a href="https://sites.google.com/g.harvard.edu/y-lab" target="_blank" rel="noreferrer">Kiyoul Yang</a>.
           </p>
           <p class="content-page__lead content-page__lead--wide">
             My professional interests span fundamental photonics research and the development of technologies that can
@@ -68,21 +68,20 @@
       </section>
 
       <section class="content-page__header content-page__header--compact news-carousel__header">
-        <p class="content-page__eyebrow">Recent News</p>
-        <div class="news-carousel__controls" aria-label="News navigation">
-          <button class="news-carousel__button js-news-carousel-prev" type="button" aria-label="Previous news item">
-            &#8592;
-          </button>
-          <button class="news-carousel__button js-news-carousel-next" type="button" aria-label="Next news item">
-            &#8594;
-          </button>
-        </div>
+        <h2 class="news-section-title">News &amp; milestones</h2>
+        
       </section>
 
-      <section class="news-carousel" aria-label="Recent news">
+      <section class="news-carousel" aria-label="News and milestones">
         <div class="news-carousel__viewport">
-          <div class="news-carousel__track js-news-carousel-track">
-            <article class="news-strip news-strip--page news-carousel__item">
+          <div class="news-carousel__track">
+<article class="news-strip news-carousel__item news-strip--featured"><p class="news-strip__label">Latest update · <time datetime="2026-09-03">September 3, 2026</time></p>
+<h2 class="news-strip__text">New device design could miniaturize photonics, quantum technologies</h2>
+<p>Our work combines engineered quantum wells and metasurfaces for enhanced nonlinear frequency conversion.</p>
+<a class="news-strip__link" href="https://seas.harvard.edu/news/new-device-design-could-miniaturize-photonics-quantum-technologies" target="_blank" rel="noreferrer">Read the Harvard SEAS story ↗</a></article>
+<h3 class="news-archive-title">Earlier news &amp; milestones</h3>
+            <article class="news-strip news-carousel__item"><p class="news-strip__label">More research news</p><p class="news-strip__text">Our work on controllable frequency combs in <em>Optica</em> was featured by Harvard SEAS.</p><a class="news-strip__link" href="https://seas.harvard.edu/news/racetrack-shaped-lasers-bright-stable-frequency-combs" target="_blank" rel="noreferrer">Read the Harvard press release ↗</a></article>
+<article class="news-strip news-strip--page news-carousel__item">
               <p class="news-strip__label">November 17, 2025</p>
               <p class="news-strip__text">
                 I defended my Ph.D. thesis. Special thanks to my committee: Federico Capasso, James
@@ -100,8 +99,10 @@
                 </p>
               </button>
               <div class="news-card__details js-news-details" hidden>
-                <img class="news-card__cover" src="./assets/cover.png"
-                  alt="Optica cover featuring continuously tunable semiconductor lasers" loading="lazy" />
+                <a href="https://opg.optica.org/optica/aboutthecover.cfm?issue=7&amp;volume=12" target="_blank" rel="noreferrer" aria-label="View the Optica cover source">
+                <img class="news-card__cover" src="./assets/optica-cover.jpg?v=20261005d"
+                  alt="Optica July 2025 cover featuring continuously tunable semiconductor lasers" width="928" height="1200" />
+                </a>
               </div>
               <div class="news-card__footer">
                 <a class="news-strip__link news-card__link" href="https://seas.harvard.edu/news/tunable-laser-light"
@@ -150,7 +151,7 @@
     </footer>
   </div>
 
-    <script src="./script.js?v=20260424e"></script>
+    <script src="./script.js?v=20261006b"></script>
 </body>
 
 </html>

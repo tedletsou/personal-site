@@ -12,21 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@600;700&family=Manrope:wght@700;800&family=Space+Grotesk:wght@600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20260424e" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=IBM+Plex+Sans:wght@600&family=Manrope:wght@600&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css?v=20261006b" />
 </head>
 
 <body class="landing-page">
-  <div class="intro" aria-hidden="true">
-    <div class="intro__name">
-      <span>T</span>
-      <span>E</span>
-      <span>D</span>
-    </div>
-  </div>
 
+
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="page-shell">
     <header class="site-header">
       <div class="site-header__inner">
@@ -40,16 +33,16 @@
       </div>
     </header>
 
-    <main id="top" class="hero-wrap">
+    <main id="main" class="hero-wrap">
       <section class="hero">
         <div class="hero__copy">
-          <h1 class="js-hero-font-scramble">
+          <h1 class="hero__title">
             <span class="hero__title-line">Hello, I'm</span>
             <span class="hero__title-line">Ted Letsou.</span>
           </h1>
 
           <p class="hero__lead">
-            Postdoctoral Fellow at Harvard University working on optics
+            Postdoctoral Fellow at Harvard University working on optics and integrated photonics.
           </p>
 
           <div class="hero__links" id="about">
@@ -86,18 +79,10 @@
         </div>
       </section>
 
-      <section class="news-strip news-strip--landing news-strip--featured" aria-labelledby="latest-news">
-        <p class="news-strip__label" id="latest-news">Latest News</p>
-        <p class="news-strip__text">
-          Our recent work on controllable frequency combs is out in Optica. Read the Harvard
-          press release here.
-        </p>
-        <a class="news-strip__link"
-          href="https://seas.harvard.edu/news/racetrack-shaped-lasers-bright-stable-frequency-combs" target="_blank"
-          rel="noreferrer">
-          Read the Harvard Press Release
-        </a>
-      </section>
+      <section class="news-strip news-strip--landing news-strip--featured" aria-label="Latest news"><p class="news-strip__label">Latest news · <time datetime="2026-09-03">September 3, 2026</time></p>
+<h2 class="news-strip__text">New device design could miniaturize photonics, quantum technologies</h2>
+<p>Our work combines engineered quantum wells and metasurfaces for enhanced nonlinear frequency conversion.</p>
+<a class="news-strip__link" href="https://seas.harvard.edu/news/new-device-design-could-miniaturize-photonics-quantum-technologies" target="_blank" rel="noreferrer">Read the Harvard SEAS story ↗</a></section>
     </main>
 
     <footer class="site-footer" id="contact">
@@ -106,7 +91,7 @@
     </footer>
   </div>
 
-    <script src="./script.js?v=20260424e"></script>
+    <script src="./script.js?v=20261006b"></script>
 </body>
 
 </html>

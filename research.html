@@ -15,29 +15,26 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@600;700&family=Manrope:wght@700;800&family=Space+Grotesk:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css?v=20260424e" />
+    <link rel="stylesheet" href="./styles.css?v=20261006b" />
   </head>
   <body class="content-page-body">
-    <div class="page-shell">
+    <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
       <header class="site-header">
         <div class="site-header__inner">
           <a class="brand" href="./index.html">Ted Letsou</a>
 
           <nav class="site-nav" aria-label="Primary">
             <a href="./about.html">About</a>
-            <span class="site-nav__static">Research</span>
+            <a href="./research.html" aria-current="page">Research</a>
             <a href="./publications.html">Publications</a>
           </nav>
         </div>
       </header>
 
-      <main class="content-page content-page--feature">
+      <main id="main" class="content-page content-page--feature">
         <section class="content-page__header content-page__header--compact">
-          <h1 class="page-title js-font-scramble">
+          <h1 class="page-title">
             <span class="page-title__line">Research</span>
           </h1>
           <div class="research-header-grid">
@@ -61,7 +58,7 @@
 
         <section class="feature-grid feature-grid--overlay" aria-label="Research themes">
           <article class="publication-card feature-card js-feature-card">
-            <button class="feature-card__surface js-feature-surface" type="button" aria-expanded="false">
+            <div class="feature-card__surface">
               <video
                 class="feature-card__image feature-card__video"
                 src="./assets/ted0001-0120.mp4"
@@ -75,8 +72,8 @@
               <div class="feature-card__header">
                 <h2>Active photonics</h2>
               </div>
-            </button>
-            <div class="feature-card__details js-feature-details" hidden>
+            </div>
+            <div class="feature-card__details">
               <p class="feature-card__text">
                 Passive photonic circuits can only take you so far. At some point, every optical
                 system reaches the same limit: you wish you had more light, more control, or a way
@@ -101,13 +98,13 @@
           </article>
 
           <article class="publication-card feature-card js-feature-card">
-            <button class="feature-card__surface js-feature-surface" type="button" aria-expanded="false">
+            <div class="feature-card__surface">
               <img class="feature-card__image" src="./assets/research-sensing.png" alt="Sensing systems research image" />
               <div class="feature-card__header">
                 <h2>Sensing systems</h2>
               </div>
-            </button>
-            <div class="feature-card__details js-feature-details" hidden>
+            </div>
+            <div class="feature-card__details">
               <p class="feature-card__text">
                 The mid-infrared, broadly defined here as 3-12 µm, is one of the richest regions in optics because
                 many molecules have strong, distinctive spectral fingerprints there. My work in sensing is driven
@@ -129,7 +126,7 @@
           </article>
 
           <article class="publication-card feature-card js-feature-card">
-            <button class="feature-card__surface js-feature-surface" type="button" aria-expanded="false">
+            <div class="feature-card__surface">
               <video
                 class="feature-card__image feature-card__video"
                 src="./assets/WhatsApp Video 2026-04-24 at 14.06.54.mp4"
@@ -143,8 +140,8 @@
               <div class="feature-card__header">
                 <h2>Ultrafast optics</h2>
               </div>
-            </button>
-            <div class="feature-card__details js-feature-details" hidden>
+            </div>
+            <div class="feature-card__details">
               <p class="feature-card__text">
                 Lasers are often thought of as sources that emit a single color of light, but that is not always
                 the case. Under the right conditions, a laser can emit many evenly spaced colors at once, and if
@@ -176,6 +173,6 @@
       </footer>
     </div>
 
-    <script src="./script.js?v=20260424e"></script>
+    <script src="./script.js?v=20261006b"></script>
   </body>
 </html>

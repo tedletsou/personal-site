@@ -12,13 +12,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@600;700&family=Manrope:wght@700;800&family=Space+Grotesk:wght@600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20260424e" />
+  <link rel="stylesheet" href="./styles.css?v=20261006b" />
 </head>
 
 <body class="content-page-body">
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="page-shell">
     <header class="site-header">
       <div class="site-header__inner">
@@ -27,14 +25,14 @@
         <nav class="site-nav" aria-label="Primary">
           <a href="./about.html">About</a>
           <a href="./research.html">Research</a>
-          <span class="site-nav__static">Publications</span>
+          <a href="./publications.html" aria-current="page">Publications</a>
         </nav>
       </div>
     </header>
 
-    <main class="content-page">
+    <main id="main" class="content-page">
       <section class="content-page__header content-page__header--compact">
-        <h1 class="page-title js-font-scramble">
+        <h1 class="page-title">
           <span class="page-title__line">Publications</span>
         </h1>
         <p class="content-page__lead">
@@ -49,11 +47,12 @@
       </section>
 
       <section class="publication-controls" aria-label="Publication filters">
-        <div class="publication-controls__themes" role="toolbar" aria-label="Themes">
+        <div class="publication-controls__themes" role="group" aria-label="Themes">
           <button class="publication-filter is-active" type="button" data-theme="all">All</button>
           <button class="publication-filter" type="button" data-theme="active-photonics">Active photonics</button>
           <button class="publication-filter" type="button" data-theme="sensing-systems">Sensing systems</button>
           <button class="publication-filter" type="button" data-theme="ultrafast-optics">Ultrafast optics</button>
+<button class="publication-filter" type="button" data-theme="nanophotonics">Nanophotonics</button>
         </div>
 
         <label class="publication-controls__year">
@@ -73,16 +72,36 @@
         </label>
       </section>
 
-      <section class="publication-grid publication-grid--three" aria-label="Publication list">
+      <p class="contribution-note">* Equal contribution.</p>
+      <p class="publication-status" role="status" aria-live="polite"></p>
+<section class="publication-grid publication-grid--three" aria-label="Publication list">
+<article class="publication-card publication-card--compact publication-card--interactive js-publication-card" data-themes="nanophotonics" data-year="2026">
+ <button class="publication-card__surface js-publication-surface" type="button" aria-expanded="false">
+ <p class="publication-card__meta">Nature Nanotechnology · September 2026</p><h2>Quantum-well metasurface for free-space-accessible enhanced nonlinear polarization</h2>
+ <p class="publication-card__authors js-publication-authors" data-short-authors="Pernille Undrum Fathi, Irene Occhiodori, … Federico Capasso." data-full-authors="Pernille Undrum Fathi, Irene Occhiodori, Patrick Devaney, Amberly Ricks, Rithvik Ramesh, Yiwei Ju, Moaz Waqar, Theodore P. Letsou, Christina M. Spägele, Hyunseung Jung, Igal Brener, Xiaoqing Pan, Marcus Ossiander, Seth R. Bank, and Federico Capasso.">Pernille Undrum Fathi, Irene Occhiodori, … Federico Capasso.</p></button>
+ <div class="publication-card__details js-publication-details" hidden><p class="publication-card__abstract">Engineered quantum wells and a dielectric metasurface enhance free-space-accessible nonlinear polarization for near-infrared frequency conversion.</p></div>
+ <div class="publication-card__footer"><a class="publication-card__link" href="https://www.nature.com/articles/s41565-026-02268-0" target="_blank" rel="noreferrer">View publication ↗</a><button class="publication-card__toggle js-publication-toggle" type="button" aria-expanded="false" aria-label="Expand details">+</button></div></article>
+<article class="publication-card publication-card--compact publication-card--interactive js-publication-card" data-themes="active-photonics sensing-systems ultrafast-optics" data-year="2026">
+ <button class="publication-card__surface js-publication-surface" type="button" aria-expanded="false">
+ <p class="publication-card__meta">arXiv preprint · August 2026</p><h2>A swept-source dual-comb spectrometer on a chip</h2>
+ <p class="publication-card__authors js-publication-authors" data-short-authors="Johannes Fuchsberger*, Theodore P. Letsou*, … Benedikt Schwarz." data-full-authors="Johannes Fuchsberger*, Theodore P. Letsou*, Paul Chevalier, Marcus Ossiander, Dmitry Kazakov, Federico Capasso, and Benedikt Schwarz.">Johannes Fuchsberger*, Theodore P. Letsou*, … Benedikt Schwarz.</p></button>
+ <div class="publication-card__details js-publication-details" hidden><p class="publication-card__abstract">Two racetrack semiconductor lasers on one chip enable swept-source dual-comb spectroscopy in the mid-infrared. Johannes Fuchsberger and Theodore P. Letsou contributed equally.</p></div>
+ <div class="publication-card__footer"><a class="publication-card__link" href="https://arxiv.org/abs/2608.22827" target="_blank" rel="noreferrer">View preprint ↗</a><button class="publication-card__toggle js-publication-toggle" type="button" aria-expanded="false" aria-label="Expand details">+</button></div></article>
+<article class="publication-card publication-card--compact publication-card--interactive js-publication-card" data-themes="nanophotonics" data-year="2026">
+ <button class="publication-card__surface js-publication-surface" type="button" aria-expanded="false">
+ <p class="publication-card__meta">arXiv preprint · July 2026</p><h2>Hybrid BaTiO₃/TiO₂ Metasurface for Efficient Gigahertz-Speed Free-Space Electro-Optic Modulation</h2>
+ <p class="publication-card__authors js-publication-authors" data-short-authors="Zhongpeng Sun, Kerolos M. A. Yousef, … Federico Capasso." data-full-authors="Zhongpeng Sun, Kerolos M. A. Yousef, Michael Domm, Agham Posadas, Xudong Li, Marcus Ossiander, Maryna L. Meretska, Yiwei Ju, Isabel Barth, Jason Tischler, Theodore P. Letsou, Moaz Waqar, Amirhassan Shams-Ansari, Xiaoqing Pan, Alexander A. Demkov, and Federico Capasso.">Zhongpeng Sun, Kerolos M. A. Yousef, … Federico Capasso.</p></button>
+ <div class="publication-card__details js-publication-details" hidden><p class="publication-card__abstract">A hybrid barium titanate and titanium dioxide metasurface enables efficient free-space electro-optic modulation with a measured bandwidth of approximately 0.8 GHz.</p></div>
+ <div class="publication-card__footer"><a class="publication-card__link" href="https://arxiv.org/abs/2608.00286" target="_blank" rel="noreferrer">View preprint ↗</a><button class="publication-card__toggle js-publication-toggle" type="button" aria-expanded="false" aria-label="Expand details">+</button></div></article>
         <article class="publication-card publication-card--compact publication-card--interactive js-publication-card"
           data-themes="active-photonics ultrafast-optics" data-year="2026">
           <button class="publication-card__surface js-publication-surface" type="button" aria-expanded="false">
             <p class="publication-card__meta">Optica · 2026</p>
             <h2>High-power ring laser frequency-modulated combs</h2>
             <p class="publication-card__authors js-publication-authors"
-              data-short-authors="Theodore P. Letsou, Johannes Fuchsberger, ... Federico Capasso."
-              data-full-authors="Theodore P. Letsou, Johannes Fuchsberger, Nikola Opačak, Dmitry Kazakov, Pascal Chevalier, Benedikt Schwarz, and Federico Capasso.">
-              Theodore P. Letsou, Johannes Fuchsberger, ... Federico Capasso.
+              data-short-authors="Theodore P. Letsou*, Johannes Fuchsberger*, ... Federico Capasso."
+              data-full-authors="Theodore P. Letsou*, Johannes Fuchsberger*, Nikola Opačak, Dmitry Kazakov, Pascal Chevalier, Benedikt Schwarz, and Federico Capasso.">
+              Theodore P. Letsou*, Johannes Fuchsberger*, ... Federico Capasso.
             </p>
           </button>
           <div class="publication-card__details js-publication-details" hidden>
@@ -105,9 +124,9 @@
             <p class="publication-card__meta">Optica · 2025</p>
             <h2>Continuously and widely tunable semiconductor ring lasers</h2>
             <p class="publication-card__authors js-publication-authors"
-              data-short-authors="Johannes Fuchsberger, Theodore P. Letsou, ... Benedikt Schwarz."
-              data-full-authors="Johannes Fuchsberger, Theodore P. Letsou, Dmitry Kazakov, Rolf Szedlak, Federico Capasso, and Benedikt Schwarz.">
-              Johannes Fuchsberger, Theodore P. Letsou, ... Benedikt Schwarz.
+              data-short-authors="Johannes Fuchsberger*, Theodore P. Letsou*, ... Benedikt Schwarz."
+              data-full-authors="Johannes Fuchsberger*, Theodore P. Letsou*, Dmitry Kazakov, Rolf Szedlak, Federico Capasso, and Benedikt Schwarz.">
+              Johannes Fuchsberger*, Theodore P. Letsou*, ... Benedikt Schwarz.
             </p>
           </button>
           <div class="publication-card__details js-publication-details" hidden>
@@ -153,9 +172,9 @@
             <p class="publication-card__meta">Nature · 2025</p>
             <h2>Driven bright solitons on a mid-infrared laser chip</h2>
             <p class="publication-card__authors js-publication-authors"
-              data-short-authors="Dmitry Kazakov, Theodore P. Letsou, ... Federico Capasso."
-              data-full-authors="Dmitry Kazakov, Theodore P. Letsou, Marco Piccardo, Lorenzo L. Columbo, Massimo Brambilla, Franco Prati, Sandro Dal Cin, Maximilian Beiser, Nikola Opačak, Michael Pushkarsky, David Caffey, Timothy Day, Luigi A. Lugiato, Benedikt Schwarz, and Federico Capasso.">
-              Dmitry Kazakov, Theodore P. Letsou, ... Federico Capasso.
+              data-short-authors="Dmitry Kazakov*, Theodore P. Letsou*, ... Federico Capasso."
+              data-full-authors="Dmitry Kazakov*, Theodore P. Letsou*, Marco Piccardo, Lorenzo L. Columbo, Massimo Brambilla, Franco Prati, Sandro Dal Cin, Maximilian Beiser, Nikola Opačak, Michael Pushkarsky, David Caffey, Timothy Day, Luigi A. Lugiato, Benedikt Schwarz, and Federico Capasso.">
+              Dmitry Kazakov*, Theodore P. Letsou*, ... Federico Capasso.
             </p>
           </button>
           <div class="publication-card__details js-publication-details" hidden>
@@ -469,7 +488,7 @@
     </footer>
   </div>
 
-  <script src="./script.js?v=20260424e"></script>
+  <script src="./script.js?v=20261006b"></script>
 </body>
 
 </html>
